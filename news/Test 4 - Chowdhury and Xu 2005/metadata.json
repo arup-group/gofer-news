@@ -1,0 +1,6 @@
+{
+	"title": "C-phi analysis",
+	"subTitle": "After Chowdhury and Xu, 2005",
+	"description": "This case study examines Gofer's c-phi analysis feature, comparing factor of safety results with Oasys Slope and Oasys Safe.",
+	"created": "2021-01-25"
+}
