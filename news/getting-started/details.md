@@ -32,7 +32,13 @@ When you are happy with the configurations and assignments, the **Results** tab 
 
 Much like our furry namesake, Gofer supports collaboration that can make working across networks possible. You can also share your model with any licensed user.
 
-To dig deeper and learn more about each tool check out our full documentation under the [**Help** icon](https://gofer-dev.oasys-software.com/docs/overview/support-tickets/) as well as on the [**Learn** tab](https://gofer-dev.oasys-software.com/docs/#tutorials-and-example-models) where Gofer guides you through video tutorials.
+To dig deeper and learn more about each tool check out our full documentation under the **Help** icon:
+
+![help-icon](https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/validationImages/submit-support-request.png)
+
+as well as on the **Learn** tab where Gofer guides you through video tutorials:
+
+![learn-tab](https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/validationImages/learn-tab.png)
 
 For real world and synthetic examples of applications for Gofer, check out our **Example models**.
 
