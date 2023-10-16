@@ -1,5 +1,7 @@
 # Gofer: The journey so far
 
+![Happy Birthday Gofer](https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/Birthday_Version_1.gif)
+
 Oasys Gofer is already one year old! As we celebrate this first birthday, we’re feeling nostalgic about the journey so far.
 
 The Gofer team is made up of members from 15 offices in 6 countries, all of whom worked for three years in collaboration to develop Gofer. We wanted to respond to industry changes and ever growing needs to collaborate and work remotely while taking advantage of cloud computing capabilities.

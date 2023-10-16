@@ -1,5 +1,7 @@
 # Catch us at Smart Geotechnics!
 
+![Happy Birthday Gofer](https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/Smart_Geo_Image_Gofer.svg)
+
 The Oasys team is exhibiting again at the second Smart Geotechnic Conference in London on the 5th of October! We’re excited meet with you, learn from you, and share with you. And we’ll be joined by new friends!
 
 Phil Child, Senior Consultant for Geotechnical Information Management at Seequent will help us introduce our latest product offering, Oasys Giraphe. This is our first product developed as a Seequent Technology Partner. We think you will be as excited as we are to welcome Giraphe to the Oasys portfolio.
