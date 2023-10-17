@@ -1,6 +1,6 @@
 # Catch us at Smart Geotechnics!
 
-![Happy Birthday Gofer](https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/Smart_Geo_Image_Gofer.svg)
+![Oasys team at Smart Geotechnics](https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/Smart_Geo_Image_Gofer.svg)
 
 The Oasys team is exhibiting again at the second Smart Geotechnic Conference in London on the 5th of October! We’re excited meet with you, learn from you, and share with you. And we’ll be joined by new friends!
 
