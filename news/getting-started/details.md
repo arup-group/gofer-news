@@ -1,5 +1,7 @@
 # Let Gofer be your guide
 
+![Gofer is your guide](https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/Getting_started_image.svg)
+
 Welcome to the Oasys Gofer experience! We’ve reimagined geotechnical finite element analysis (FEA) and created a tool that is incredibly user friendly. Bring the benefits of cloud-computing to your models, with access from wherever you have an internet connection, without the need for a powerful machine.
 
 We’ve made it easy to get started, let Gofer be your guide! In this article we dig in and explore the key elements of the modelling process.
