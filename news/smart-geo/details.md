@@ -1,4 +1,4 @@
-# Catch us at Smart Geotechnics!
+# Did you catch us at Smart Geotechnics?
 
 ![Oasys team at Smart Geotechnics](https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/Smart_Geo_Image_Gofer.svg)
 
