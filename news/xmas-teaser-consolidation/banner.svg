@@ -1,6 +1,6 @@
-<svg width="1500" height="330" viewBox="0 0 1500 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1500" height="350" viewBox="0 0 1500 350" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_17531_3408)">
-<rect width="1500" height="330" fill="white"/>
+<rect width="1500" height="350" fill="white"/>
 <g clip-path="url(#clip1_17531_3408)">
 <path d="M1500 0H0V350H1500V0Z" fill="#D1E3FA"/>
 <path d="M1500 0H0V350H1500V0Z" fill="#D1E3FA"/>
@@ -184,7 +184,7 @@
 </g>
 <defs>
 <clipPath id="clip0_17531_3408">
-<rect width="1500" height="330" fill="white"/>
+<rect width="1500" height="350" fill="white"/>
 </clipPath>
 <clipPath id="clip1_17531_3408">
 <rect width="1500" height="350" fill="white"/>
