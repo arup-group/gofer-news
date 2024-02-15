@@ -1,18 +1,15 @@
-# Did you catch us at Smart Geotechnics?
-6 October 2023 
+# A step up for Oasys Gofer - Webinar
+14 February 2024 
 
-![Oasys team at Smart Geotechnics](https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/Smart_Geo_Image_Gofer.svg)
+![image of an envelope and letter with news about Gofer]((https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/a-step-up-article-image.svg)
 
-The Oasys team exhibited again at the second Smart Geotechnic Conference in London on the 5th of October! There was lots of excitement on all sides. We got to meet with you, learn from you, and share with you. And lots of interest for our new friends and product. 
+Join us for our webinar, A step up for [Oasys Gofer](https://www.oasys-software.com/products/gofer/) on 22nd February, 2024 at 14:30 GMT, where we will unveil upcoming updates to Oasys Gofer! We will showcase new features and improvements that are coming soon to Gofer: You will get a sneak peak of consolidations and interfaces, which are currently in the final testing phase. We will also demonstrate how Gofer is becoming more versatile and capable of modelling a wider range of geotechnical problems. Finally, we will recap on capabilities and benefits of Gofer, including our API with seamless automation. 
 
-That’s our Geotechnical Product Manager, Mark Skinner in Giraphe yellow, and Norbert Kovacs, Senior Business Development Manager sporting Gofer green.
+Our team will demonstrate how you can navigate our documentation, videos, news, and example models. 
 
-Phil Child, Senior Consultant for Geotechnical Information Management at Seequent helped us introduce our latest product offering, Oasys Giraphe. This is our first product developed as a Seequent Technology Partner. We were glad to hear so much interest and enthusiasm from you as we welcome Giraphe to the Oasys portfolio.
+Click [here](https://events.teams.microsoft.com/event/79a19829-fc62-4094-9fa2-37c1b2953bcd@4ae48b41-0137-4599-8661-fc641fe77bea)
+to register for this free webinar.
 
-You may have already met the Oasys Gofer team at NUMGE earlier this year. In addition to Gofer, our reimagined FEA (finite element analysis) modelling solution, Giraphe is a new graphing tool for use with OpenGround. It seems the word is out and many of you agree that Gofer is a great tool for FEA and that engineers of all levels of experience are finding this method more accessible with the help of Gofer. 
+You’ll discover the possibilities Gofer unlocks and the benefits of cloud software. 
 
-With Giraphe you can create a range of graphs to construct in situ and laboratory testing results and geo-environmental and monitoring data. Seamlessly connect to OpenGround datasets, or create your own by uploading a CSV and produce report-ready graphs in a few clicks. 
-
-We were so glad to see your enthusiasm for Giraphe. "I think it is safe to say Giraphe was pretty much a hit with everyone," was the takeaway of the day from Norbert Kovacs. 
-
-It was great to have so many visitors at our booth to share our enthusiasm to keep creating new software solutions with you. We're so glad we were able to introduce you to our latest addition to the Oasys geotechnical suite of products at Smart Geotechnic Basements and Underground Structures conferences. 
+Don’t miss this opportunity to discover how we’ve elevated Gofer to the next level! 
