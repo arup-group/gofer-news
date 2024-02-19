@@ -1,7 +1,7 @@
 # A step up for Oasys Gofer - Webinar
 14 February 2024 
 
-![image of an envelope and letter with news about Gofer]((https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/a-step-up-article-image.svg)
+![image of an envelope and letter with news about Gofer](https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/a-step-up-article-image.svg)
 
 Join us for our webinar, A step up for [Oasys Gofer](https://www.oasys-software.com/products/gofer/) on 22nd February, 2024 at 14:30 GMT, where we will unveil upcoming updates to Oasys Gofer! We will showcase new features and improvements that are coming soon to Gofer: You will get a sneak peak of consolidations and interfaces, which are currently in the final testing phase. We will also demonstrate how Gofer is becoming more versatile and capable of modelling a wider range of geotechnical problems. Finally, we will recap on capabilities and benefits of Gofer, including our API with seamless automation. 
 
