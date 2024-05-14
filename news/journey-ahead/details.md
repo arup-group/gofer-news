@@ -1,7 +1,7 @@
 # Gofer: the journey ahead, Pt. 2
 10 May 2024 
 
-![image of a bus shelter with map of new features in Gofer as stops.](https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/gofer-the-journey-ahead-part-2-article-top-image.svg)
+![image of a bus shelter with map of new features in Gofer as stops.](https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/gofer-the-journey-ahead-part-2-article-top-imagev2.svg)
 
 ##  Our next milestone
 
