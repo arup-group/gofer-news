@@ -9,7 +9,7 @@ After celebrating Oasys Gofer’s first birthday, the international team dove in
 
 Leveraging the cloud means it is easier for us to incrementally improve things as we go along, and to be responsive as we hear from our users. Now we’re stepping up to bring Gofer to this next major milestone, adding the **capability to model many more geotechnical problems**.
 
-Some examples of these include improvements to the way groundwater in excavations, at least above soil clusters, is modelled. Previously this needed a manual load to be applied but that is no longer the case. Gofer now does this for you automatically.
+Some examples of these include improvements to the way groundwater in excavations, at least above soil blocks, is modelled. Previously this needed a manual load to be applied but that is no longer the case. Gofer now does this for you automatically.
 
 ## Interfaces
 
