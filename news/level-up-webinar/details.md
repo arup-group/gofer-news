@@ -13,4 +13,4 @@ Performance has been improved. For faster and more effective analysis we’ve im
 
 Gofer’s **robust API supports automation**, allowing Gofer to be controlled using Python. The team will present examples of sensitivity analyses demonstrating the automation potential of being in the cloud. It is easy to integrate into your existing workflows to enhance productivity and simplify routine geotechnical FEA making every day modelling efficient.    
 
-Designed for geotechnical engineers of all experience levels, Gofer is user-friendly and accelerates skill development with readily available tutorials, example models, and updated documentation. Learn more and see Gofer hard at work during our free webinar. Click [here](https://lnkd.in/e7DFjEhN) to register. 
+Designed for geotechnical engineers of all experience levels, Gofer is user-friendly and accelerates skill development with readily available tutorials, example models, and updated documentation. Learn more and see Gofer hard at work during our free webinar. Click [here](https://events.teams.microsoft.com/event/cab45c61-c5f8-4ff6-aa2c-114629ea3818@4ae48b41-0137-4599-8661-fc641fe77bea) to register. 
