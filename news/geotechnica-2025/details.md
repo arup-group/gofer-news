@@ -1,6 +1,7 @@
 # Did you see us at Geotechnica?
 
-![Graphic of Gofer character](https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/geotechnica-article-top-image.svg)
+![Photo of Oasys team members at our Geotechnica 2025 booth.](https://b2c-templates-arup.s3-eu-west-1.amazonaws.com/gofer/norbert-matt-raul-ben-mark_geotechnica-2025.svg)
+<sub>Oasys Giraphe team members: Norbert Kovacs, Matthew Brown, Raul Perulero Serrano, Arup's Ben Gilson and Mark Skinner in front of our Geotechnica 2025 booth.</sub>
 
 We really enjoyed being at [**Geotechnica** 2025](https://www.equipegroup.com/geotechnica/about). We spoke to lots of you from across the geotechnical community and beyond - great to reconnect with colleagues from the industry. But also a wonderful chance to meet with some longstanding users of our software – and to make new connections! 
 
