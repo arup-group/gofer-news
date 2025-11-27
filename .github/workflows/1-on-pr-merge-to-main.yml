@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - task/GOFER-3448-S3
 
 jobs:
   deploy_to_dev:
