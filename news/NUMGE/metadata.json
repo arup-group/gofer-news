@@ -1,5 +1,8 @@
 {
-    "title": "A postcard from NUMGE",
-    "description": "We sponsored NUMGE’s 10th conference and the team got to meet you!",
-    "created": "2023-09-30"
+  "title": "A postcard from NUMGE",
+  "subTitle": "",
+  "description": "We sponsored NUMGE’s 10th conference and the team got to meet you!",
+  "created": "2023-09-30",
+  "newsExpiryDate": "2023-10-30"
 }
+
