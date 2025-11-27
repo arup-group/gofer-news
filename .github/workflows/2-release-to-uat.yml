@@ -1,0 +1,89 @@
+name: 2. Release to UAT
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy_to_uat_uk:
+    name: Deploy to UAT UK
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    environment:
+      name: uat
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Deploy to UAT UK
+        uses: ./.github/actions/deploy
+        with:
+          bucket_url: https://gofer-uat.oasys-software.com/gofer-news
+          distribution_id: E2UGN9AFT1U7UC
+          account_id: 529952274877
+          region: eu-west-1
+          environment: uat
+
+  deploy_to_uat_b2c:
+    name: Deploy to uat-b2c
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    environment:
+      name: uat-b2c
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Deploy to UAT B2C
+        uses: ./.github/actions/deploy
+        with:
+          bucket_url: https://gofer-uat-b2c.oasys-software.com/gofer-news
+          distribution_id: E3DRQN2WX88FA3
+          account_id: 529952274877
+          region: eu-west-1
+          environment: uat-b2c
+
+  deploy_to_uat_au:
+    name: Deploy to UAT AU
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    environment:
+      name: au-uat
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Deploy to UAT AU
+        uses: ./.github/actions/deploy
+        with:
+          bucket_url: https://au.gofer-uat.oasys-software.com/gofer-news
+          distribution_id: ERET66YO0D6YS
+          account_id: 529952274877
+          region: ap-southeast-2
+          environment: au-uat
+
+  # deploy_to_uat_hk:
+  #   name: Deploy to UAT HK
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     id-token: write
+  #     contents: read
+  #   environment:
+  #     name: hk-uat
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v6
+  #
+  #     - name: Deploy to UAT HK
+  #       uses: ./.github/actions/deploy
+  #       with:
+  #         bucket_url: https://hk.gofer-uat.oasys-software.com/gofer-news
+  #         distribution_id: E13VXUFFZCCCIY
+  #         account_id: 529952274877
+  #         region: ap-east-1
+  #         environment: hk-uat

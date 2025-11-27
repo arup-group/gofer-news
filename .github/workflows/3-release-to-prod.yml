@@ -1,0 +1,89 @@
+name: 3. Release to prod
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy_to_prod_uk:
+    name: Deploy to prod UK
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    environment:
+      name: prod
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Deploy to prod UK
+        uses: ./.github/actions/deploy
+        with:
+          bucket_url: https://gofer.oasys-software.com/gofer-news
+          distribution_id: E373VQ8UYO56AS
+          account_id: 934718069621
+          region: eu-west-1
+          environment: prod
+
+  deploy_to_prod_b2c:
+    name: Deploy to prod B2C
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    environment:
+      name: b2cuk
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Deploy to prod B2C
+        uses: ./.github/actions/deploy
+        with:
+          bucket_url: https://app.oasysgofer.com/gofer-news
+          distribution_id: EEWLNL4M3Y7RP
+          account_id: 773236643202
+          region: eu-west-1
+          environment: b2cuk
+
+  deploy_to_prod_au:
+    name: Deploy to prod AU
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    environment:
+      name: au-prod
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Deploy to prod AU
+        uses: ./.github/actions/deploy
+        with:
+          bucket_url: https://au.gofer.oasys-software.com/gofer-news
+          distribution_id: E2RLZ7H8QSVDM2
+          account_id: 934718069621
+          region: ap-southeast-2
+          environment: au-prod
+
+  # deploy_to_prod_hk:
+  #   name: Deploy to prod HK
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     id-token: write
+  #     contents: read
+  #   environment:
+  #     name: hk-prod
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v6
+  #
+  #     - name: Deploy to prod HK
+  #       uses: ./.github/actions/deploy
+  #       with:
+  #         bucket_url: https://hk.gofer.oasys-software.com/gofer-news
+  #         distribution_id: E2MXS04YNHUVAN
+  #         account_id: 934718069621
+  #         region: ap-east-1
+  #         environment: hk-prod

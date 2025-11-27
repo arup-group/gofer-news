@@ -1,0 +1,65 @@
+name: Deploy
+description: Deploys news articles with metadata to S3
+
+inputs:
+  bucket_url:
+    required: true
+    description: URL of the S3 bucket (as defined by Cloudfront behaviour)
+  distribution_id:
+    required: true
+    description: ID of the Cloudfront distribution
+  account_id:
+    required: true
+    description: ID of the AWS account
+  region:
+    required: true
+    description: Name of the AWS region
+  environment:
+    required: true
+    description: Name of the environment being deployed to (e.g. dev)
+
+runs:
+  using: "composite"
+  steps:
+    - name: Generate metadata
+      shell: bash
+      run: |
+        output=$(echo "[]" | jq '.')
+
+        for dir in news/*; do
+          metadata=$(jq '.' "$dir/metadata.json")
+
+          metadata=$(echo "$metadata" | jq --arg url "${{ inputs.bucket_url }}/$dir/banner.svg" '. + {bannerUrl: $url}')
+          metadata=$(echo "$metadata" | jq --arg url "${{ inputs.bucket_url }}/$dir/smallBanner.svg" '. + {smallBannerUrl: $url}')
+          metadata=$(echo "$metadata" | jq --arg url "${{ inputs.bucket_url }}/$dir/smallImage.svg" '. + {smallImageUrl: $url}')
+          metadata=$(echo "$metadata" | jq --arg url "${{ inputs.bucket_url }}/$dir/details.md" '. + {detailsUrl: $url}')
+
+          output=$(echo "$output" | jq --argjson o "$metadata" '. += [$o]')
+        done
+
+        echo "$output" >metadata.json
+
+    - name: Prepare directory for upload
+      shell: bash
+      run: |
+        mkdir for_upload
+        mv metadata.json for_upload
+        mv news for_upload
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v5
+      with:
+        role-to-assume: arn:aws:iam::${{ inputs.account_id }}:role/GitHub
+        role-session-name: rolesession
+        aws-region: ${{ inputs.region }}
+
+    - name: Upload files to S3
+      shell: bash
+      working-directory: for_upload
+      run: |
+        aws s3 sync --delete . s3://gofer-news-${{ inputs.environment }}/gofer-news
+
+    - name: Invalidate Cache
+      shell: bash
+      run: |
+        aws cloudfront create-invalidation --distribution-id ${{ inputs.distribution_id }} --paths "/gofer-news/*"
