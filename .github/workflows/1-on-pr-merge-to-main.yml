@@ -28,12 +28,23 @@ jobs:
           region: eu-west-1
           environment: dev
 
-  # deploy_to_dev_b2c:
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v6
-  #
-  #     - name: Deploy to dev_b2c
-  #       uses: ./.github/actions/deploy
-  #       with:
-  #         environment: dev_b2c
+  deploy_to_dev_b2c:
+    name: Deploy to dev-b2c
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    environment:
+      name: dev-b2c
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Deploy to dev-b2c
+        uses: ./.github/actions/deploy
+        with:
+          bucket_url: https://gofer-dev-b2c.oasys-software.com/gofer-news
+          distribution_id: E1GZHHS42RI05E
+          account_id: 529952274877
+          region: eu-west-1
+          environment: dev-b2c
