@@ -1,6 +1,6 @@
 #! /bin/bash
 
-BUCKET_ADDRESS="https://gofer-news-test.s3.eu-west-1.amazonaws.com"
+BUCKET_ADDRESS="https://gofer-dev.oasys-software.com/gofer-news"
 
 output=$(echo "[]" | jq '.')
 
