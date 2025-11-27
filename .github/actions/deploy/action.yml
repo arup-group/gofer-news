@@ -39,6 +39,13 @@ runs:
 
         echo "$output" >metadata.json
 
+    - name: Prepare directory for upload
+      shell: bash
+      run: |
+        mkdir for_upload
+        mv metadata.json for_upload
+        mv news for_upload
+
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v5
       with:
@@ -48,6 +55,7 @@ runs:
 
     - name: Upload files to S3
       shell: bash
+      working-directory: for_upload
       run: |
         aws s3 sync --delete . s3://gofer-news-${{ inputs.environment }}/gofer-news
 
