@@ -28,7 +28,7 @@ jobs:
           environment: dev
 
   deploy_to_dev_b2c:
-    name: Deploy to dev-b2c
+    name: Deploy to dev B2C
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -39,7 +39,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Deploy to dev-b2c
+      - name: Deploy to dev B2C
         uses: ./.github/actions/deploy
         with:
           bucket_url: https://gofer-dev-b2c.oasys-software.com/gofer-news
