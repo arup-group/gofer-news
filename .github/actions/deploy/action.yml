@@ -2,15 +2,21 @@ name: Deploy
 description: Deploys news articles with metadata to S3
 
 inputs:
-  environment:
-    required: true
-    description: "Name of the environment being deployed to (e.g. dev)"
   bucket_url:
     required: true
-    description: "URL of the S3 bucket (as defined by Cloudfront behaviour)"
+    description: URL of the S3 bucket (as defined by Cloudfront behaviour)
   distribution_id:
     required: true
-    description: "ID of the Cloudfront distribution"
+    description: ID of the Cloudfront distribution
+  account_id:
+    required: true
+    description: ID of the AWS account
+  region:
+    required: true
+    description: Name of the AWS region
+  environment:
+    required: true
+    description: Name of the environment being deployed to (e.g. dev)
 
 runs:
   using: "composite"
@@ -33,23 +39,19 @@ runs:
 
         echo "$output" >metadata.json
 
-    - name: TEST CORRECT
-      shell: bash
-      run: cat metadata.json
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v5
+      with:
+        role-to-assume: arn:aws:iam::${{ inputs.account_id }}:role/GitHub
+        role-session-name: rolesession
+        aws-region: ${{ inputs.region }}
 
-    # - name: Configure AWS credentials
-    #   uses: aws-actions/configure-aws-credentials@v4
-    #   with:
-    #     role-to-assume: arn:aws:iam::${{ env.ACCOUNT }}:role/GitHub
-    #     role-session-name: rolesession
-    #     aws-region: ${{ env.REGION }}
-    #
-    # - name: Upload files to S3
-    #   shell: bash
-    #   run: |
-    #     aws s3 sync --delete . s3://gofer-news-${{ inputs.environment }}/gofer-news
-    #
-    # - name: Invalidate Cache
-    #   shell: bash
-    #   run: |
-    #     aws cloudfront create-invalidation --distribution-id ${{ inputs.distribution_id }} --paths "/gofer-news/*"
+    - name: Upload files to S3
+      shell: bash
+      run: |
+        aws s3 sync --delete . s3://gofer-news-${{ inputs.environment }}/gofer-news
+
+    - name: Invalidate Cache
+      shell: bash
+      run: |
+        aws cloudfront create-invalidation --distribution-id ${{ inputs.distribution_id }} --paths "/gofer-news/*"
